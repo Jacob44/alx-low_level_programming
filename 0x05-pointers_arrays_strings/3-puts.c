@@ -7,7 +7,7 @@
  *
  * Return: prints the string
  */
-void _puts(char *str);
+void _puts(char *str)
 {
 	int j = 1;
 	char ch = str[0];
