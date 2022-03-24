@@ -17,7 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 	for (j = 0; src[j] != '\0'; j++)
 		srclen++;
 
-	if (srclen <= n)
+	if (srclen < n)
 	{
 		while (*src)
 			*dest++ = *src++;
