@@ -7,24 +7,23 @@
  *
  * Return: string in reverse
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int j;
+	int j = 0;
 	int i;
-	int len;
-	char revs[] = {};
+	int len = 0;
+	char rev = &s;
 
-	j = 0;
-	i = 0;
-	len = 0;
-	while (s[j] != '\0')
-	{
+	printf("%s\n", rev);
+	for (i = 0; s[i] != '\0'; i++)
 		len++;
-		j++;
-	}
-	for (j = (len - 1); j >= 0; j--)
+	printf("%d\n", len);
+	for (i = (len - 1); i >= 0; i--)
 	{
-		rev[i++] = s[j];
+		printf("%c ", s[i]);
+		rev[j] = s[i];
+		j++;
+		printf("%c\n", rev[j]);
 	}
 	s = rev;
 }
