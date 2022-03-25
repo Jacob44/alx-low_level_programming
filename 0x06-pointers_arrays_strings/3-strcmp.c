@@ -5,7 +5,7 @@
  * _strcmp - compare two strings.
  * @s1: first string
  * @s2: second string
- * 
+ *
  * Return: integer
  */
 int _strcmp(char *s1, char *s2)
@@ -21,15 +21,14 @@ int _strcmp(char *s1, char *s2)
 	if (s1len > s2len)
 		n = s1len;
 	else
-		n = s2len;	
-	for (i = 0; i<=n; i++)
+		n = s2len;
+	for (i = 0; i <= n; i++)
 	{
 		cmpr = s1[i] - s2[i];
 		if (cmpr != 0)
 		{
-			return cmpr;
-			break;
+			return (cmpr);
 		}
 	}
-	return cmpr;
+	return (cmpr);
 }
