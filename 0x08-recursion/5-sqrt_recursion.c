@@ -54,19 +54,12 @@ int _perfect_square(int n)
 	int mod1, mod2;
 	int l2dig;
 	int div1;
-	int dig = 0;
-	int div = n;
 
-	while (div != 0)
-	{
-		dig++;
-		div /= 10;
-	}
 	mod1 = n % 10;
 	div1 = n / 10;
 	mod2 = div1 % 10;
 	l2dig = mod2 * 10 + mod1;
-	if ((mod1 == 0 && dig % 2 == 0) || ((mod1 == 1 || mod1 == 9) &&
+	if (mod1 == 0 || ((mod1 == 1 || mod1 == 9) &&
 				(mod2 % 2 == 0)) || ((mod1 == 4 || mod1 == 6) &&
 					(l2dig % 4 == 0)) || (mod1 == 5 && mod2 == 2))
 		return (1);
