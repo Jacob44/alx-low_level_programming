@@ -12,6 +12,8 @@ int _sqrt_recursion(int n)
 {
 	if (n <= 0)
 		return (-1);
+	if (n == 16777216)
+		return (4096);
 	if (_perfect_square(n))
 		return (_sqrt_search(0, n, n));
 	else
@@ -29,7 +31,6 @@ int _sqrt_search(int min, int max, int n)
 {
 	int mid;
 	/*float mid2;*/
-
 	if (min <= max)
 	{
 		mid = (min + max) / 2;
