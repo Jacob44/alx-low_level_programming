@@ -8,8 +8,9 @@
  *
  * Return: 0 if there is success.
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	if (argv)
+		printf("%d\n", argc);
 	return (0);
 }
