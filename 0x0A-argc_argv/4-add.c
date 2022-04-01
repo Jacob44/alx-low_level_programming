@@ -19,22 +19,23 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
-	for (; i < argc; i++)
+	else
 	{
-		intc = atoi(argv[i]);
-		if (!atoi(argv[i]))
-		{
-			printf("Error\n");
-			return (1);
+		for (; i < argc; i++)
+		{	intc = atoi(argv[i]);
+			if (!atoi(argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				add += intc;
+			}
 		}
-		else
-		{
-			add += intc;
-		}
+		printf("%d\n", add);
 	}
-	printf("%d\n", add);
 	return (0);
 }
 
