@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		for (; i < argc; i++)
-		{	
+		{
 			intc = atoi(argv[i]);
 			if (!intc)
 			{
