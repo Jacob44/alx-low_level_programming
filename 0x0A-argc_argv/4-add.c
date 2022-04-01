@@ -2,7 +2,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-
+#include <ctype.h>
 /**
  * main - adds positive numbers and prints the result.
  * @argc: number of commands
@@ -12,31 +12,27 @@
  */
 int main(int argc, char *argv[])
 {
-	int add = 0;
-	int i = 1;
+	int add = 0, i;
 	int intc;
 
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
 	}
-	else
+	while (argc-- > 1)
 	{
-		for (; i < argc; i++)
+		for (i = 0; argv[argc][i]; i++)
 		{
-			intc = atoi(argv[i]);
-			if (!intc)
+			if (!(isdigit(argv[argc][i])))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				add += intc;
-			}
 		}
-		printf("%d\n", add);
+		intc = atoi(argv[argc]);
+		add += intc;		
 	}
+	 printf("%d\n", add);
 	return (0);
 }
 
