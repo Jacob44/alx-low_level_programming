@@ -3,10 +3,10 @@
 
 /**
  * main - print the name of the program.
- * @argc - number of commands
- * @argv - the commands
+ * @argc: number of commands
+ * @argv: the commands
  *
- * Return - 0 if there is success.
+ * Return: 0 if there is success.
  */
 int main(int argc, char *argv[])
 {
