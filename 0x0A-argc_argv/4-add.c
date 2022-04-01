@@ -23,8 +23,9 @@ int main(int argc, char *argv[])
 	else
 	{
 		for (; i < argc; i++)
-		{	intc = atoi(argv[i]);
-			if (!atoi(argv[i]))
+		{	
+			intc = atoi(argv[i]);
+			if (!intc)
 			{
 				printf("Error\n");
 				return (1);
