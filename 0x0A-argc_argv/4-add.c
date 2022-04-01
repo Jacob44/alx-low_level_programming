@@ -15,10 +15,6 @@ int main(int argc, char *argv[])
 	int add = 0, i;
 	int intc;
 
-	if (argc == 1)
-	{
-		printf("%d\n", 0);
-	}
 	while (argc-- > 1)
 	{
 		for (i = 0; argv[argc][i]; i++)
@@ -32,6 +28,6 @@ int main(int argc, char *argv[])
 		intc = atoi(argv[argc]);
 		add += intc;
 	}
-	 printf("%d\n", add);
+	printf("%d\n", add);
 	return (0);
 }
