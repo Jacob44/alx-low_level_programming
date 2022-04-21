@@ -12,10 +12,6 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 
-	if (h->next == NULL && h->str == NULL)
-	{
-		return (count);
-	}
 	while (h)
 	{
 		if (h->str == NULL)
