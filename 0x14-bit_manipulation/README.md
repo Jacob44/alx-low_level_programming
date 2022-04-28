@@ -1,18 +1,4 @@
-0ulation
- By Julien Barbier
-  Weight: 1
-   Ongoing project - started Apr 28, 2022, must end by Apr 29, 2022 - you're done with 0% of tasks.
-    Checker was released at Apr 28, 2022 12:00 PM
-     An auto review will be launched at the deadline
-
-
-Resources
-Read or watch:
-
-Google
-Youtube
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+#0x14. C-Bit manipulation
 
 General
 Look for the right source of information without too much help
