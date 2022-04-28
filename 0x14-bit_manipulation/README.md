@@ -1,9 +1,9 @@
-0x14. C - Bit manipulation
+0ulation
  By Julien Barbier
- Weight: 1
- Ongoing project - started Apr 28, 2022, must end by Apr 29, 2022 - you're done with 0% of tasks.
- Checker was released at Apr 28, 2022 12:00 PM
- An auto review will be launched at the deadline
+  Weight: 1
+   Ongoing project - started Apr 28, 2022, must end by Apr 29, 2022 - you're done with 0% of tasks.
+    Checker was released at Apr 28, 2022 12:00 PM
+     An auto review will be launched at the deadline
 
 
 Resources
