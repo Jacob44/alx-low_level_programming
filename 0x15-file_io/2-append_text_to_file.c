@@ -7,30 +7,33 @@
 #include <unistd.h>
 
 /**
- * create_file - create a function that creates a file.
+ * append_text_to_file - appends text at the end of a file
  * @filename: the name of the file to create
  * @text_content: size of the letters
  *
- * Return: the actual number of letters it could read and print.
+ * Return: 1 on success and -1 on failure.
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int i, fd, len = 1;
-	ssize_t fdw;
+	int fd, len = 0;
+	int fdw;
 
 	if (filename == NULL)
 		return (-1);
-	fd =  open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
-	if (fd < 0)
+	fd =  open(filename, O_RDWR | O_APPEND);
+	if (text_content == NULL)
 	{
-		return (0);
+		if (fd > 0)
+		{
+			close(fd);
+			return (1);
+		}
+		return (-1);
 	}
-	for (i = 0; text_content[i] == '\0'; i++)
-	{
+	while (*(text_content + len))
 		len++;
-	}
 	fdw = write(fd, text_content, len);
-	close(fdw);
+	close(fd);
 	if (fdw < 0)
 		return (-1);
 	return (1);
